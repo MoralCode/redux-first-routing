@@ -6,10 +6,10 @@
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
   "license": "MIT",
-  "homepage": "https://github.com/mksarge/redux-first-routing",
+  "homepage": "https://github.com/olavk/redux-first-routing",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mksarge/redux-first-routing.git"
+    "url": "https://github.com/olavk/redux-first-routing.git"
   },
   "bugs": {
     "url": "https://github.com/mksarge/redux-first-routing/issues"
@@ -27,9 +27,7 @@
     "node": ">= 4"
   },
   "files": [
-    "dist",
-    "es",
-    "lib"
+    "src"
   ],
   "dependencies": {
     "history": "^5.0.0",
