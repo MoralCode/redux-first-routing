@@ -13,10 +13,10 @@ export const routerMiddleware = history => () => next => (action) => {
       history.go(action.payload);
       break;
     case GO_BACK:
-      history.goBack();
+      history.back();
       break;
     case GO_FORWARD:
-      history.goForward();
+      history.forward();
       break;
     default:
       return next(action);
