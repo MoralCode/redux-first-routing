@@ -28,12 +28,13 @@ Install the library from [npm](https://www.npmjs.org/package/redux-first-routing
 npm install --save redux-first-routing
 ```
 
-Or, use the following script tag to access the [latest UMD build](https://unpkg.com/redux-first-routing/dist) on `window.ReduxFirstRouting`:
+~~Or, use the following script tag to access the [latest UMD build](https://unpkg.com/redux-first-routing/dist) on `window.ReduxFirstRouting`:~~
 
-```html
+<!-- ```html
 <script src="https://unpkg.com/redux-first-routing/dist/redux-first-routing.min.js"></script>
-```
+``` -->
 
+UMD builds are currently removed as they are causing build failures on my machine and I dont need them. See issue #2 for more information.
 ## Usage
 
 #### Basic Usage
