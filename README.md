@@ -1,5 +1,9 @@
 # Redux-First Routing [![npm version](https://img.shields.io/npm/v/redux-first-routing.svg?style=flat)](https://www.npmjs.org/package/redux-first-routing) [![build status](https://api.travis-ci.org/mksarge/redux-first-routing.svg?branch=master)](https://travis-ci.org/mksarge/redux-first-routing/) [![Join the chat at https://gitter.im/simple-redux-first-routing/community](https://badges.gitter.im/simple-redux-first-routing/community.svg)](https://gitter.im/simple-redux-first-routing/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+
+*This is a fork of the original redux-first-routing repository made by mksarge with contributions from the community. I cant promise to keep maintaining it forever, but I'll at least keep it alive and be active enough to ensure it still works for my [ClassClock](https://github.com/MoralCode/ClassClock) project (at least until I find a replacement)*
+
+
 Achieve client-side routing *the Redux way*:
 
 - Read location data from the store.
