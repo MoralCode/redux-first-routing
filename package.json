@@ -1,7 +1,7 @@
 {
   "name": "simple-redux-first-routing",
-  "version": "0.3.0",
-  "description": "Redux-first routing",
+  "version": "0.4.0",
+  "description": "A simple Redux-first routing package",
   "main": "src/index.js",
   "license": "MIT",
   "homepage": "https://github.com/MoralCode/simple-redux-first-routing",
