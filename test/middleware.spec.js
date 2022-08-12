@@ -21,11 +21,11 @@ const actions = [
     type: 'ROUTER/GO',
   },
   {
-    action: 'goBack',
+    action: 'back',
     type: 'ROUTER/GO_BACK',
   },
   {
-    action: 'goForward',
+    action: 'forward',
     type: 'ROUTER/GO_FORWARD',
   },
 ];
@@ -37,8 +37,8 @@ describe('middleware', () => {
       push: sandbox.stub(),
       replace: sandbox.stub(),
       go: sandbox.stub(),
-      goBack: sandbox.stub(),
-      goForward: sandbox.stub(),
+      back: sandbox.stub(),
+      forward: sandbox.stub(),
       listen: sandbox.stub(),
     };
     nextHandler = routerMiddleware(history)();
