@@ -1,4 +1,4 @@
-# Redux-First Routing [![npm version](https://img.shields.io/npm/v/redux-first-routing.svg?style=flat)](https://www.npmjs.org/package/redux-first-routing) [![build status](https://api.travis-ci.org/mksarge/redux-first-routing.svg?branch=master)](https://travis-ci.org/mksarge/redux-first-routing/)
+# Redux-First Routing [![npm version](https://img.shields.io/npm/v/redux-first-routing.svg?style=flat)](https://www.npmjs.org/package/redux-first-routing) [![build status](https://api.travis-ci.org/mksarge/redux-first-routing.svg?branch=master)](https://travis-ci.org/mksarge/redux-first-routing/) [![Join the chat at https://gitter.im/simple-redux-first-routing/community](https://badges.gitter.im/simple-redux-first-routing/community.svg)](https://gitter.im/simple-redux-first-routing/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Achieve client-side routing *the Redux way*:
 
