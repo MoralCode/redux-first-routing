@@ -1,16 +1,16 @@
 {
-  "name": "redux-first-routing",
+  "name": "simple-redux-first-routing",
   "version": "0.3.0",
   "description": "Redux-first routing",
   "main": "src/index.js",
   "license": "MIT",
-  "homepage": "https://github.com/olavk/redux-first-routing",
+  "homepage": "https://github.com/MoralCode/simple-redux-first-routing",
   "repository": {
     "type": "git",
-    "url": "https://github.com/olavk/redux-first-routing.git"
+    "url": "https://github.com/MoralCode/simple-redux-first-routing.git"
   },
   "bugs": {
-    "url": "https://github.com/mksarge/redux-first-routing/issues"
+    "url": "https://github.com/MoralCode/simple-redux-first-routing/issues"
   },
   "author": "Michael Sargent <michael-sargent@hotmail.com> (https://mksarge.com)",
   "keywords": [
