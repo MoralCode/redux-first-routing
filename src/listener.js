@@ -7,11 +7,11 @@ export function startListener(history, store) {
     hash: history.location.hash,
   }));
 
-  history.listen((location) => {
+  history.listen((update) => {
     store.dispatch(locationChange({
-      pathname: location.pathname,
-      search: location.search,
-      hash: location.hash,
+      pathname: update.location.pathname,
+      search: update.location.search,
+      hash: update.location.hash,
     }));
   });
 }
