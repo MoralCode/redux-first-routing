@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { createSlice } from '@reduxjs/toolkit';
-import { push, replace, go, goBack, goForward } from './actions';
+import { push, replace, go, goBack, goForward, locationChanged } from './actions';
 
 const initialState = {
   pathname: '/',
@@ -31,6 +31,12 @@ const routerSlice = createSlice({
       .addCase(go, (state, action) => state)
       .addCase(goBack, (state, action) => state)
       .addCase(goForward, (state, action) => state)
+      .addCase(locationChanged, (state, action) => {
+        return {
+          ...state,
+          ...action.payload,
+        };
+      })
       // and provide a default case if no other handlers matched
       .addDefaultCase((state, action) => {});
   },
@@ -38,7 +44,6 @@ const routerSlice = createSlice({
 
 // `createSlice` automatically generated action creators with these names.
 // export them as named exports from this "slice" file
-export const { locationChanged } = routerSlice.actions;
 
 // Export the slice reducer as the default export
 export default routerSlice.reducer;

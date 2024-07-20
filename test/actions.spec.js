@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { push, replace, go, goBack, goForward, locationChange } from '../src/actions';
+import { push, replace, go, goBack, goForward, locationChanged } from '../src/actions';
 
 describe('action creators', () => {
   const testUrl = '/nested/path?with=query#and-hash';
@@ -37,12 +37,14 @@ describe('action creators', () => {
 
   it('goBack', () => {
     expect(goBack()).to.eql({
+      payload: undefined,
       type: 'ROUTER/GO_BACK',
     });
   });
 
   it('goForward', () => {
     expect(goForward()).to.eql({
+      payload: undefined,
       type: 'ROUTER/GO_FORWARD',
     });
   });
@@ -54,7 +56,7 @@ describe('action creators', () => {
       hash: '#and-hash',
     };
 
-    expect(locationChange(location)).to.eql({
+    expect(locationChanged(location)).to.eql({
       type: 'ROUTER/LOCATION_CHANGE',
       payload: {
         pathname: '/nested/path',
