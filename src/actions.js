@@ -1,35 +1,24 @@
-import { parse } from 'query-string';
-import { PUSH, REPLACE, GO, GO_BACK, GO_FORWARD, LOCATION_CHANGE } from './constants';
+import { createAction } from '@reduxjs/toolkit';
+// import { parse } from 'query-string';
+import { PUSH, REPLACE, GO, GO_BACK, GO_FORWARD } from './constants';
 
-export const push = href => ({
-  type: PUSH,
-  payload: href,
-});
 
-export const replace = href => ({
-  type: REPLACE,
-  payload: href,
-});
+export const push = createAction(PUSH);
 
-export const go = index => ({
-  type: GO,
-  payload: index,
-});
+export const replace = createAction(REPLACE);
 
-export const goBack = () => ({
-  type: GO_BACK,
-});
+export const go = createAction(GO);
 
-export const goForward = () => ({
-  type: GO_FORWARD,
-});
+export const goBack = createAction(GO_BACK);
 
-export const locationChange = ({ pathname, search, hash }) => ({
-  type: LOCATION_CHANGE,
-  payload: {
-    pathname,
-    search,
-    queries: parse(search),
-    hash,
-  },
-});
+export const goForward = createAction(GO_FORWARD);
+
+// export const locationChange = ({ pathname, search, hash }) => ({
+//   type: LOCATION_CHANGE,
+//   payload: {
+//     pathname,
+//     search,
+//     queries: parse(search),
+//     hash,
+//   },
+// });
