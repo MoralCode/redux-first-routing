@@ -31,12 +31,10 @@ const routerSlice = createSlice({
       .addCase(go, (state, action) => state)
       .addCase(goBack, (state, action) => state)
       .addCase(goForward, (state, action) => state)
-      .addCase(locationChanged, (state, action) => {
-        return {
-          ...state,
-          ...action.payload,
-        };
-      })
+      .addCase(locationChanged, (state, action) => ({
+        ...state,
+        ...action.payload,
+      }))
       // and provide a default case if no other handlers matched
       .addDefaultCase((state, action) => {});
   },
