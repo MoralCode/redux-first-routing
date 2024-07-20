@@ -24,5 +24,5 @@ function prepare({ pathname, search, hash }) {
   };
 }
 
-export const locationChanged = createAction(LOCATION_CHANGE, prepare);
+export const locationChange = createAction(LOCATION_CHANGE, prepare);
 

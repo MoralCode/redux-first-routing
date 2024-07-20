@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import routerReducer from '../src/reducer';
-import { locationChanged } from '../src/actions';
+import { locationChange } from '../src/actions';
 
 const fakeAction = () => ({
   type: 'FAKE_ACTION',
@@ -44,7 +44,7 @@ describe('reducer', () => {
       search: '?with=query',
       hash: '#and-hash',
     };
-    const action2 = locationChanged(newLocation);
+    const action2 = locationChange(newLocation);
     const actualResult2 = routerReducer(previousState, action2);
     const expectedResult = {
       pathname: '/nested/path',

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { createSlice } from '@reduxjs/toolkit';
-import { push, replace, go, goBack, goForward, locationChanged } from './actions';
+import { push, replace, go, goBack, goForward, locationChange } from './actions';
 
 const initialState = {
   pathname: '/',
@@ -31,7 +31,7 @@ const routerSlice = createSlice({
       .addCase(go, (state, action) => state)
       .addCase(goBack, (state, action) => state)
       .addCase(goForward, (state, action) => state)
-      .addCase(locationChanged, (state, action) => ({
+      .addCase(locationChange, (state, action) => ({
         ...state,
         ...action.payload,
       }))

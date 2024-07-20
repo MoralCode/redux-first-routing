@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { push, replace, go, goBack, goForward, locationChanged } from '../src/actions';
+import { push, replace, go, goBack, goForward, locationChange } from '../src/actions';
 
 describe('action creators', () => {
   const testUrl = '/nested/path?with=query#and-hash';
@@ -56,7 +56,7 @@ describe('action creators', () => {
       hash: '#and-hash',
     };
 
-    expect(locationChanged(location)).to.eql({
+    expect(locationChange(location)).to.eql({
       type: 'ROUTER/LOCATION_CHANGE',
       payload: {
         pathname: '/nested/path',
